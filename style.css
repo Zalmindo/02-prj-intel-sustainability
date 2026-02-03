@@ -1,1 +1,180 @@
-/* Add your CSS here */
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling with gradient background */
+body {
+  font-family: Arial, sans-serif;
+  background: rgb(13, 125, 177);
+  color: #333;
+  min-height: 100vh;
+}
+
+/* Header / Hero Section */
+header {
+  background: linear-gradient(135deg, #0773c4 0%, #016b97 50%, #055693 100%);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* Center the content in header */
+header div {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Logo styling - resize the SVG */
+header img {
+  width: 150px;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+/* Main heading */
+header h1 {
+  font-size: 64px;
+  color: white;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Subheading paragraph */
+header p {
+  font-size: 24px;
+  color: white;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Timeline Cards Section - Horizontal scrolling container */
+section {
+  display: flex;
+  overflow-x: auto;
+  gap: 30px;
+  padding: 60px 50px;
+  scroll-behavior: smooth;
+  max-width: 1370px;
+  margin: 0 auto;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Hide scrollbar but keep functionality */
+section::-webkit-scrollbar {
+  height: 12px;
+}
+
+section::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+section::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 10px;
+}
+
+/* Timeline Card Styling */
+section > div {
+  min-width: 300px;
+  height: 315px;
+  background: white;
+  border-radius: 15px;
+  padding: 25px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Card year styling */
+section > div h2 {
+  font-size: 36px;
+  color: #0773c4;
+  margin-bottom: 10px;
+  transition: all 0.4s ease;
+}
+
+/* Card title styling */
+section > div h3 {
+  font-size: 24px;
+  color: #016b97;
+  margin-bottom: 15px;
+  transition: all 0.4s ease;
+}
+
+/* Image placeholder - space for images to be added later */
+section > div::before {
+  content: '';
+  display: none;
+  width: 100%;
+  height: 120px;
+  background: linear-gradient(135deg, #c4dce4 0%, #6ccffc 100%);
+  border-radius: 10px;
+  margin-bottom: 15px;
+  transition: all 0.4s ease;
+}
+
+/* Style for card images */
+section > div img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  display: block;
+  transition: all 0.4s ease;
+}
+
+/* Card description - hidden by default */
+section > div p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: white;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 85%;
+  text-align: center;
+  transition: all 0.4s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+/* Hover effect - blur and fade year, title, and image */
+section > div:hover h2,
+section > div:hover h3 {
+  filter: blur(8px);
+  opacity: 0.3;
+}
+
+section > div:hover::before,
+section > div:hover img {
+  filter: blur(8px);
+  opacity: 0.3;
+}
+
+/* Hover effect - show description with gradient background */
+section > div:hover {
+  background: linear-gradient(135deg, #15b8fc 0%, #0773c4 50%, #016b97 100%);
+}
+
+section > div:hover p {
+  opacity: 1;
+}
+
+/* Footer text below timeline */
+body > p {
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 23px;
+  color: white;
+  background: #009acd47;
+  font-style: italic;
+}
