@@ -178,3 +178,32 @@ body > p {
   background: #009acd47;
   font-style: italic;
 }
+
+/* Responsive Design - Stack vertically on smaller screens */
+@media (max-width: 768px) {
+  /* Stack cards vertically and remove horizontal scrolling */
+  section {
+    display: flex;
+    flex-direction: column;
+    overflow-x: visible;
+    gap: 20px;
+    padding: 30px 20px;
+    max-width: 100%;
+  }
+
+  /* Make cards full width on smaller screens */
+  section > div {
+    min-width: 100%;
+    width: 100%;
+    height: auto;
+  }
+
+  /* Adjust header text size for smaller screens */
+  header h1 {
+    font-size: 36px;
+  }
+
+  header p {
+    font-size: 18px;
+  }
+}
