@@ -1,9 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Intel: Sustainability Through the Ages</title>
+  <title>إنتل: الاستدامة عبر العصور</title>
+  <!-- Bootstrap RTL (right-to-left support) -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css"
+    rel="stylesheet"
+  />
+  <!-- Bootstrap Icons -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    rel="stylesheet"
+  />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -12,132 +22,221 @@
   <header>
     <div>
       <!-- Ask Copilot to teach you about `.svg`. 🙂 You'll need to resize the logo with CSS. -->
-      <img src="img/intel-header-logo.svg" alt="Intel Logo" />
+      <img src="img/intel-header-logo.svg" alt="شعار إنتل" />
       <!-- Main Heading -->
       <h1>
-        Sustainability Through the Ages
+        الاستدامة عبر العصور
       </h1>
 
       <!-- Subheading / Description -->
       <p>
-        Explore Intel's journey through time, discovering how our commitment
-        to innovation has shaped a more sustainable future for technology 
-        and our planet.
+        استكشف رحلة إنتل عبر الزمن، واكتشف كيف شكّل التزامنا بالابتكار
+        مستقبلاً أكثر استدامة للتقنية وكوكبنا.
       </p>
     </div>
   </header>
 
   <!-- Timeline Cards Section -->
-  <section>
+  <section class="timeline">
 
     <!-- Card 1: 1968 -->
     <div>
       <h2>1968</h2>
-      <h3>Intel Founded</h3>
-      <img src="img/intel_founded.jpg" alt="Intel founded in 1968" />
+      <h3>تأسيس إنتل</h3>
+      <img src="img/intel_founded.jpg" alt="تأسيس إنتل عام 1968" />
       <p>
-        Robert Noyce and Gordon Moore rename the newly formed company 
-        NM Electronics to Intel Corporation, laying the foundation for 
-        decades of technological innovation.
+        أعاد روبرت نويس وجوردون مور تسمية الشركة الناشئة
+        من NM Electronics إلى Intel Corporation، واضعين الأساس
+        لعقود من الابتكار التقني.
       </p>
     </div>
 
     <!-- Card 2: 1971 -->
     <div>
       <h2>1971</h2>
-      <h3>First Microprocessor</h3>
-      <img src="img/Intel_D4004.jpg" alt="Intel 4004 microprocessor" />
+      <h3>أول معالج دقيق</h3>
+      <img src="img/Intel_D4004.jpg" alt="المعالج الدقيق إنتل 4004" />
       <p>
-        Intel debuts the 4004, the world's first commercial microprocessor, 
-        igniting the microprocessor revolution and propelling the future 
-        of computing devices.
+        كشفت إنتل عن 4004، أول معالج دقيق تجاري في العالم،
+        ما أشعل ثورة المعالجات الدقيقة ودفع مستقبل أجهزة الحوسبة.
       </p>
     </div>
 
     <!-- Card 3: 1978 -->
     <div>
       <h2>1978</h2>
-      <h3>8086 Processor</h3>
-      <img src="img/intel_8086.jpg" alt="Intel 8086 processor" />
+      <h3>معالج 8086</h3>
+      <img src="img/intel_8086.jpg" alt="معالج إنتل 8086" />
       <p>
-        Launch of the 8086 processor, establishing the x86 architecture 
-        that drives countless PCs and servers in the modern era.
+        إطلاق معالج 8086 الذي أسس معمارية x86
+        التي تشغّل عدداً لا يحصى من الحواسيب والخوادم في العصر الحديث.
       </p>
     </div>
 
     <!-- Card 4: 1985 -->
     <div>
       <h2>1985</h2>
-      <h3>386 Processor</h3>
-      <img src="img/intel_386.jpg" alt="Intel 386 processor" />
+      <h3>معالج 386</h3>
+      <img src="img/intel_386.jpg" alt="معالج إنتل 386" />
       <p>
-        Intel introduces the 386 processor with 32-bit architecture, 
-        ushering in a new era of performance and multitasking for 
-        personal computers.
+        قدّمت إنتل معالج 386 بمعمارية 32 بت،
+        لتدشّن عصراً جديداً من الأداء وتعدد المهام للحواسيب الشخصية.
       </p>
     </div>
 
     <!-- Card 5: 2006 -->
     <div>
       <h2>2006</h2>
-      <h3>Peak GHG Emissions</h3>
-      <img src="img/greenhouse.jpeg" alt="Greenhouse gas emissions" />
+      <h3>ذروة انبعاثات الغازات الدفيئة</h3>
+      <img src="img/greenhouse.jpeg" alt="انبعاثات الغازات الدفيئة" />
       <p>
-        This year marks Intel's highest annual greenhouse gas emissions 
-        for operations. Over subsequent years, Intel invests heavily in 
-        chemical abatement, renewable energy, and energy-efficient 
-        manufacturing to reverse this trend.
+        يمثّل هذا العام أعلى انبعاثات سنوية للغازات الدفيئة من عمليات إنتل.
+        وفي السنوات اللاحقة، استثمرت إنتل بكثافة في خفض الانبعاثات الكيميائية
+        والطاقة المتجددة والتصنيع عالي الكفاءة لعكس هذا الاتجاه.
       </p>
     </div>
 
     <!-- Card 6: 2020 -->
     <div>
       <h2>2020</h2>
-      <h3>RISE Strategy</h3>
-      <img src="img/RISE.jpeg" alt="Intel RISE strategy" />
+      <h3>استراتيجية RISE</h3>
+      <img src="img/RISE.jpeg" alt="استراتيجية إنتل RISE" />
       <p>
-        Intel launches its RISE (Responsible, Inclusive, Sustainable, 
-        Enabling) strategy and 2030 goals, aiming to drive industry-wide 
-        progress on climate action, water stewardship, and waste reduction.
+        أطلقت إنتل استراتيجية RISE (مسؤولة، شاملة، مستدامة، مُمكِّنة)
+        وأهداف عام 2030، بهدف دفع التقدم على مستوى الصناعة في العمل المناخي
+        وإدارة المياه وتقليل النفايات.
       </p>
     </div>
 
     <!-- Card 7: 2022 -->
     <div>
       <h2>2022</h2>
-      <h3>Net-Zero By 2040</h3>
-      <img src="img/net-0.jpeg" alt="Net-zero commitment" />
+      <h3>صافي صفري بحلول 2040</h3>
+      <img src="img/net-0.jpeg" alt="التزام صافي صفري" />
       <p>
-        Intel announces its commitment to achieve net-zero greenhouse 
-        gas emissions (Scope 1 and 2) across its global operations 
-        by 2040, building on years of environmental initiatives.
+        أعلنت إنتل التزامها بتحقيق صافي انبعاثات غازات دفيئة صفري
+        (النطاقان 1 و2) عبر عملياتها العالمية بحلول 2040،
+        استناداً إلى سنوات من المبادرات البيئية.
       </p>
     </div>
 
     <!-- Card 8: 2023 -->
     <div>
       <h2>2023</h2>
-      <h3>Renewable Electricity</h3>
-      <img src="img/renewable.jpeg" alt="Renewable electricity" />
+      <h3>الكهرباء المتجددة</h3>
+      <img src="img/renewable.jpeg" alt="كهرباء متجددة" />
       <p>
-        The company achieves 99% renewable electricity usage worldwide, 
-        helping to drastically lower carbon emissions and driving progress 
-        toward Intel's long-term sustainability goals.
+        حققت الشركة استخداماً عالمياً للكهرباء المتجددة بنسبة 99%،
+        ما ساعد على خفض انبعاثات الكربون بشكل كبير ودفع التقدم نحو
+        أهداف الاستدامة طويلة المدى لإنتل.
       </p>
     </div>
 
     <!-- Card 9: 2024 -->
     <div>
       <h2>2024</h2>
-      <h3>Sustainability Summit</h3>
-      <img src="img/summit.jpeg" alt="Sustainability summit" />
+      <h3>قمة الاستدامة</h3>
+      <img src="img/summit.jpeg" alt="قمة الاستدامة" />
       <p>
-        Intel hosts its first Sustainability Summit, uniting suppliers, 
-        government officials, and industry leaders to collaborate on 
-        next-generation sustainable semiconductor manufacturing.
+        استضافت إنتل أول قمة للاستدامة، جامعةً الموردين والمسؤولين الحكوميين
+        وقادة الصناعة للتعاون في تصنيع أشباه الموصلات المستدام من الجيل القادم.
       </p>
     </div>
   </section>
-  <p>Scroll to view timeline | Hover over cards to learn more!</p>
+  <p>مرّر لعرض الجدول الزمني | مرّر المؤشر فوق البطاقات لمعرفة المزيد!</p>
+
+    <!-- 3-Column Content Section -->
+  <section class="features container">
+    <div class="row g-4">
+      <!-- Column 1 -->
+      <div class="col-12 col-md-4">
+        <div class="feature-card h-100">
+          <h2>
+            <i class="bi bi-graph-up-arrow" aria-hidden="true"></i>
+            استراتيجية RISE
+          </h2>
+          <p>
+            ضمن استراتيجية RISE (مسؤولة، شاملة، مستدامة، مُمكِّنة)،
+            تضع إنتل أهدافاً طموحة لعام 2030، بما في ذلك دفع التقدم
+            على مستوى الصناعة في العمل المناخي وإدارة المياه وتقليل النفايات.
+          </p>
+          <!-- Learn More Button -->
+          <a class="learn-more" href="#">اعرف المزيد</a>
+        </div>
+      </div>
+
+      <!-- Column 2 -->
+      <div class="col-12 col-md-4">
+        <div class="feature-card h-100">
+          <h2>
+            <i class="bi bi-shield-check" aria-hidden="true"></i>
+            الالتزام
+          </h2>
+          <p>
+            في عام 2022، تعهّدت إنتل بتحقيق صافي انبعاثات غازات دفيئة صفري
+            (النطاقان 1 و2) بحلول 2040. ويستند هذا الالتزام إلى عقود من
+            المبادرات البيئية والشراكات عبر صناعة أشباه الموصلات.
+          </p>
+          <!-- Learn More Button -->
+          <a class="learn-more" href="#">اعرف المزيد</a>
+        </div>
+      </div>
+
+      <!-- Column 3 -->
+      <div class="col-12 col-md-4">
+        <div class="feature-card h-100">
+          <h2>
+            <i class="bi bi-droplet-half" aria-hidden="true"></i>
+            المياه والنفايات
+          </h2>
+          <p>
+            توفّر إنتل مليارات الجالونات من المياه سنوياً وتتعاون مع
+            المجتمعات المحلية لاستعادة أحواض المياه. كما تعيد استخدام
+            وتدوير المواد لتقليل النفايات ودعم الاقتصاد الدائري.
+          </p>
+          <!-- Learn More Button -->
+          <a class="learn-more" href="#">اعرف المزيد</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Subscription Form -->
+  <section class="subscribe container">
+    <h2>اشترك في نشرتنا الإخبارية</h2>
+    <form class="newsletter-form" action="#" method="post">
+      <div class="row g-3 align-items-end">
+        <div class="col-12 col-md-8">
+          <label class="form-label" for="email">البريد الإلكتروني</label>
+          <input
+            class="form-control"
+            type="email"
+            id="email"
+            name="email"
+            autocomplete="email"
+            placeholder="أدخل بريدك الإلكتروني"
+            required
+          />
+        </div>
+        <div class="col-12 col-md-4">
+          <button class="btn btn-primary w-100" type="submit">اشترك</button>
+        </div>
+      </div>
+      <p class="form-note">
+        نحن نحترم خصوصيتك. يمكنك إلغاء الاشتراك في أي وقت.
+      </p>
+    </form>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 شركة إنتل. جميع الحقوق محفوظة.</p>
+      <nav aria-label="Footer">
+        <a href="#">سياسة الخصوصية</a>
+        <a href="#">شروط الاستخدام</a>
+        <a href="#">تواصل معنا</a>
+      </nav>
+    </div>
+  </footer>
 </body>
 </html>

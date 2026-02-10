@@ -51,7 +51,7 @@ header p {
 }
 
 /* Timeline Cards Section - Horizontal scrolling container */
-section {
+.timeline {
   display: flex;
   overflow-x: auto;
   gap: 30px;
@@ -63,22 +63,22 @@ section {
 }
 
 /* Hide scrollbar but keep functionality */
-section::-webkit-scrollbar {
+.timeline::-webkit-scrollbar {
   height: 12px;
 }
 
-section::-webkit-scrollbar-track {
+.timeline::-webkit-scrollbar-track {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
 }
 
-section::-webkit-scrollbar-thumb {
+.timeline::-webkit-scrollbar-thumb {
   background: white;
   border-radius: 10px;
 }
 
 /* Timeline Card Styling */
-section > div {
+.timeline > div {
   min-width: 300px;
   height: 315px;
   background: white;
@@ -92,7 +92,7 @@ section > div {
 }
 
 /* Card year styling */
-section > div h2 {
+.timeline > div h2 {
   font-size: 36px;
   color: #0773c4;
   margin-bottom: 10px;
@@ -100,7 +100,7 @@ section > div h2 {
 }
 
 /* Card title styling */
-section > div h3 {
+.timeline > div h3 {
   font-size: 24px;
   color: #016b97;
   margin-bottom: 15px;
@@ -108,7 +108,7 @@ section > div h3 {
 }
 
 /* Image placeholder - space for images to be added later */
-section > div::before {
+.timeline > div::before {
   content: '';
   display: none;
   width: 100%;
@@ -120,7 +120,7 @@ section > div::before {
 }
 
 /* Style for card images */
-section > div img {
+.timeline > div img {
   width: 100%;
   height: 120px;
   object-fit: cover;
@@ -131,7 +131,7 @@ section > div img {
 }
 
 /* Card description - hidden by default */
-section > div p {
+.timeline > div p {
   font-size: 16px;
   line-height: 1.6;
   color: white;
@@ -148,24 +148,24 @@ section > div p {
 }
 
 /* Hover effect - blur and fade year, title, and image */
-section > div:hover h2,
-section > div:hover h3 {
+.timeline > div:hover h2,
+.timeline > div:hover h3 {
   filter: blur(8px);
   opacity: 0.3;
 }
 
-section > div:hover::before,
-section > div:hover img {
+.timeline > div:hover::before,
+.timeline > div:hover img {
   filter: blur(8px);
   opacity: 0.3;
 }
 
 /* Hover effect - show description with gradient background */
-section > div:hover {
+.timeline > div:hover {
   background: linear-gradient(135deg, #15b8fc 0%, #0773c4 50%, #016b97 100%);
 }
 
-section > div:hover p {
+.timeline > div:hover p {
   opacity: 1;
 }
 
@@ -179,10 +179,119 @@ body > p {
   font-style: italic;
 }
 
+/* Three-Column Feature Section */
+.features {
+  padding: 60px 20px;
+}
+
+.feature-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+.feature-card h2 {
+  font-size: 24px;
+  color: #014b7a;
+  margin-bottom: 15px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.feature-card p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #1f2d3d;
+  margin-bottom: 20px;
+}
+
+/* Learn More links */
+.learn-more {
+  display: inline-block;
+  text-decoration: none;
+  color: #ffffff;
+  background: #0a6ebd;
+  padding: 10px 18px;
+  border-radius: 999px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.learn-more:hover,
+.learn-more:focus {
+  background: #084f87;
+}
+
+/* Subscription Section */
+.subscribe {
+  padding: 50px 20px 70px;
+  color: #ffffff;
+}
+
+.subscribe h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 32px;
+}
+
+.newsletter-form {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  padding: 25px;
+}
+
+.newsletter-form .form-label {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.newsletter-form .form-control {
+  border-radius: 10px;
+}
+
+.form-note {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #e8f2fb;
+}
+
+/* Footer */
+.site-footer {
+  background: #013b60;
+  color: #ffffff;
+  padding: 25px 20px;
+}
+
+.site-footer .container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.site-footer nav {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.site-footer a {
+  color: #d2ecff;
+  text-decoration: none;
+}
+
+.site-footer a:hover,
+.site-footer a:focus {
+  text-decoration: underline;
+}
+
 /* Responsive Design - Stack vertically on smaller screens */
 @media (max-width: 768px) {
   /* Stack cards vertically and remove horizontal scrolling */
-  section {
+  .timeline {
     display: flex;
     flex-direction: column;
     overflow-x: visible;
@@ -192,7 +301,7 @@ body > p {
   }
 
   /* Make cards full width on smaller screens */
-  section > div {
+  .timeline > div {
     min-width: 100%;
     width: 100%;
     height: auto;
